@@ -5,9 +5,9 @@
     "module": "commonjs",
     "target": "es6",
     "jsx": "react",
-    "baseUrl": "./",
-    "paths": {
-      "src/*": ["client/*"]
-    }
+    "baseUrl": "./"
+//    "paths": {
+//      "client/*": ["client/*"]
+//    }
   }
 }

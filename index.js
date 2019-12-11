@@ -19,13 +19,13 @@ const compiler = webpack(options);
 router.get('/', (ctx, next) => {
   const scriptList = getScripts(ctx);
   const styleList = getStyles(ctx);
-
   ctx.body = template(scriptList, styleList);
   next()
 });
 
 app
   .use(static('./build'))
+  .use(static('./assets'))
   .use(koaWebpack(compiler, { serverSideRender: true }))
   .use(router.routes())
   .use(router.allowedMethods());

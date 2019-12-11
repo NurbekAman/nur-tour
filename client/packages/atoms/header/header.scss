@@ -1,0 +1,14 @@
+$blockName: '.header';
+
+#{$blockName} {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  background-color: darkgrey;
+
+  &__title {
+    padding-left: 20px;
+  }
+}

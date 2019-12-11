@@ -1,11 +1,9 @@
 import * as React from 'react';
 import { hydrate } from 'react-dom';
 
-import App from './app';
+import App from 'client/app/index';
 
 hydrate(
-  <div>
-    <App />
-  </div>,
+  <App />,
   document.getElementById('app')
 );
