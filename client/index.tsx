@@ -1,9 +1,11 @@
-import React from 'react';
+import * as React from 'react';
 import { hydrate } from 'react-dom';
+
+import App from './app';
 
 hydrate(
   <div>
-    First SSR7
+    <App />
   </div>,
   document.getElementById('app')
 );
